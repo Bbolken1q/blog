@@ -1,0 +1,35 @@
+.searchbar {
+    font-family: "JetBrains Mono";
+    float: right;
+    position: fixed;
+    left: calc(50% + 10vh - (50vw + 5*2px)/1.33);
+    margin-top: 3vh;
+    padding: 0px 3px;
+    width: 25vw;
+    height: 3vh;
+    background-color: #1c1e24;
+    border-color: #363941;
+    color: #363941;
+    border-style: solid;
+    border-radius: 7px;
+    text-align: left !important;
+    line-height: 50%;
+    font-size: large;
+    transition: all 0.1s;
+}
+
+.searchbar:focus {
+    color: aliceblue;
+    /* border: aliceblue; */
+    outline: #0040ff;
+}
+
+/* kbd {
+    
+    border-color: #282c34e7;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    font-size: 100%;
+    letter-spacing: 1px;
+} */

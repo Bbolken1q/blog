@@ -1,7 +1,3 @@
-.faceCanvas {
-  float: left;
-  width: auto;
-  height: auto;
-}
-
-
+@import url(./styles/head.css);
+@import url(./styles/navbar.css);
+@import url(./styles/searchbar.css);

@@ -1,0 +1,11 @@
+.faceCanvas {
+    float: left;
+    width: 10vw !important;
+    height: 14vh !important;
+    background-color: #27292f;
+    border-width: 2px;
+    border: solid;
+    border-color: #363941;
+    border-width: 0px 2px 2px 0px;
+    border-bottom-right-radius: 9px;
+}

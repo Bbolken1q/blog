@@ -1,0 +1,106 @@
+Navbar {
+    float: right;
+    position: fixed;
+    
+}
+
+.navbar ul {
+    margin: 0px;
+    list-style-type: none;
+    /* display: inline; */
+    float: right;
+}
+
+.navbar a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    transition-delay: calc((var(--number) - 1) * 0.1s);
+    transition-timing-function: cubic-bezier(1.000, 0.195, 0.615, 1.385);
+    letter-spacing: -1px;
+}
+
+.navbar div {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    text-align: center;
+    width: 10vw;
+    background-color: #27292f;
+    height: 6vh;
+    padding-top: 2vh;
+    border-color: #363941;
+    border-width: 2px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    font-size: x-large;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar ul>*:first-child {
+    border-bottom-left-radius: 9px;
+}
+
+.navbar li span:nth-of-type(1) {
+    background-color: rgba(0, 255, 255, 0.705);
+    --number: 1;
+}
+
+.navbar li span:nth-of-type(2) {
+    background-color: rgba(0, 255, 255, 0.705);
+    --number: 2;
+}
+
+.navbar li span:nth-of-type(3) {
+    background-color: rgba(0, 255, 255, 0.705);
+    --number: 3;
+}
+
+.navbar li span:nth-of-type(4) {
+    background-color: rgba(0, 255, 255, 0.705);
+    --number: 4;
+}
+
+.navbar li span {
+    position: absolute;
+    display: inline-block;
+    height: 120%;
+    width: 25%;
+    top: -120%;
+    left: calc(((var(--number) - 1) * 25%));
+    opacity: calc((5 - var(--number))/5);
+    z-index: -1;
+    transition: 0.3s;
+    transition-delay: calc((var(--number) - 1) * 0.1s);
+    transition-timing-function: cubic-bezier(1.000, 0.195, 0.615, 1.385);
+}
+
+.navbar li:first-of-type span:first-of-type {
+    border-bottom-left-radius: 8px;
+}
+
+.navbar li:hover span {
+    top: -20%;
+}
+
+.navbar li:hover a {
+    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; */
+    /* box-shadow: white 10px 10px 0px; */
+    /* color: #282B28; */
+    color: black;
+    letter-spacing: -1.5px;
+    /* -webkit-text-stroke: 4px black; */
+    /* color: white; */
+}
+
+
+
+
+
