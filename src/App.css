@@ -1,3 +1,5 @@
 @import url(./styles/head.css);
 @import url(./styles/navbar.css);
 @import url(./styles/searchbar.css);
+@import url(./styles/mainContent.css);
+@import url(./styles/githubHistory.css)

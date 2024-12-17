@@ -1,4 +1,5 @@
 import React from "react"
+var lang = require('../assets/lang_english.json')
 
 class searchbar extends React.Component {
     constructor() {
@@ -14,6 +15,8 @@ class searchbar extends React.Component {
             else if(event.keyCode === 13) {
                 if(this.document.activeElement === search) {
                     console.log(search.value)
+                    const searchUrl = `https://duckduckgo.com/?q=${encodeURIComponent(search.value)}`
+                    this.window.location.href = searchUrl
                 }
             }
           }); 
@@ -21,7 +24,7 @@ class searchbar extends React.Component {
     }
     render() {
         return(
-            <input id="search" className="searchbar" placeholder="  Press L to jump to searchbox"/>
+            <input id="search" className="searchbar" placeholder={lang.search.search} />
         )
     }
 }

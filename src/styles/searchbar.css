@@ -20,7 +20,7 @@
 
 .searchbar:focus {
     color: aliceblue;
-    /* border: aliceblue; */
+    border-color: rgba(240, 248, 255, 0.61);
     outline: #0040ff;
 }
 

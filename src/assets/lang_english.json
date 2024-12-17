@@ -5,5 +5,11 @@
         "links":   "Links",
         "contact": "Contact",
         "posts": "Posts"
+    },
+    "search": {
+        "search": "  press L to jump to searchbar"
+    },
+    "about": {
+        "title": "About me"
     }
 }

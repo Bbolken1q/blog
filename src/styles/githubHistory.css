@@ -1,0 +1,13 @@
+.ActionContainer {
+    top: calc(14vh + 10px);
+    position: fixed;
+    top: calc(14vh + 10px);
+    left: 0;
+    height: calc(100vh - 20vh + 20px);
+    width: 10vw;
+    display: inline-block;
+    border-color: #363941;
+    border-radius: 0px 9px 9px 0px;
+    border-width: 2px 2px 2px 0px;
+    border-style: solid;
+}
