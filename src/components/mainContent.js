@@ -6,7 +6,7 @@ class MainContent extends React.Component {
     //     super(params)
     // }
     render() { 
-        return <div className='mainContent' dangerouslySetInnerHTML={{__html: posts.links}}></div>
+        return <div className='mainContent' dangerouslySetInnerHTML={{__html: posts.posts[0]}}></div>
     }
 
 }

@@ -10,6 +10,7 @@ class actionClass {
     }
 }
 
+
 class ActionContainer extends React.Component {
     constructor() {
         super()
@@ -17,15 +18,11 @@ class ActionContainer extends React.Component {
         this.actionComponents = []
         window.actionContainer = this //define global variable to add actions to
         // this.addMessage("ASDFG", "Ohiomod")
-        this.commits = getContributedRepos("Bbolken1q")
-        Promise.all([this.commits]).then(values => {
-            console.log("promise resolved")
-            for(let i in values[0]) {
-                
-                this.addMessage(this.commits[i].message, this.commits[i].repo)
+        this.commits = getContributedRepos("Bbolken1q").then(result => {
+            for(let i in result) {
+                this.addAction(result[i].message, result[i].repo)
             }
         })
-        
     }
 
     update(scroll = false) {
@@ -57,7 +54,7 @@ class ActionContainer extends React.Component {
         }
     }
 
-    addMessage(text, repo) {
+    addAction(text, repo) {
         var action = new actionClass(<Action actiontext={text} repo={repo}/>, text, repo)
         this.actions.push(action)
 

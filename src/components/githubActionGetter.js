@@ -1,5 +1,5 @@
 const { Octokit } = require("octokit")
-// const github_auth_token = ""
+const github_auth_token = process.env.REACT_APP_GITHUB_AUTH
 
 const octokit = new Octokit({auth: github_auth_token})
 
@@ -33,6 +33,7 @@ async function getContributedRepos(username) {
     // Now that all commits have been collected, sort them
     commitHistory.sort((a, b) => a.date - b.date);
     console.log(commitHistory.reverse())
+    return commitHistory
   } catch (error) {
     console.error('Error fetching repositories:', error);
   }
