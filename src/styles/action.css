@@ -1,0 +1,44 @@
+.action {
+    font-family: 'Jetbrains Mono';
+    background: linear-gradient(230deg, #00606c, #000000);
+    background-size: 400% 400%;
+    margin-bottom: 5px;
+
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+
+    width: 100%;
+    height: auto;
+    /* height: 100px; */
+    /* background-color: brown; */
+
+    padding-bottom: 5px;
+    color: white;
+}
+
+.action > * {
+    margin-left: 10px;
+}
+
+.action h1 {
+    padding-top: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Action } from './action';
+import getContributedRepos from './githubActionGetter'; 
 
 class actionClass {
-    constructor(component, action, text) {
+    constructor(component, text, repo) {
         this.component = component
-        this.action = action
         this.text = text.substring(text.indexOf(' ') + 1)
+        this.repo = repo
     }
 }
 
@@ -15,6 +16,16 @@ class ActionContainer extends React.Component {
         this.actions = []
         this.actionComponents = []
         window.actionContainer = this //define global variable to add actions to
+        // this.addMessage("ASDFG", "Ohiomod")
+        this.commits = getContributedRepos("Bbolken1q")
+        Promise.all([this.commits]).then(values => {
+            console.log("promise resolved")
+            for(let i in values[0]) {
+                
+                this.addMessage(this.commits[i].message, this.commits[i].repo)
+            }
+        })
+        
     }
 
     update(scroll = false) {
@@ -46,8 +57,8 @@ class ActionContainer extends React.Component {
         }
     }
 
-    addMessage(text, type) {
-        var action = new actionClass(<Action actiontext={text} actiontype={type} edited={false}/>, type, text)
+    addMessage(text, repo) {
+        var action = new actionClass(<Action actiontext={text} repo={repo}/>, text, repo)
         this.actions.push(action)
 
         this.update()

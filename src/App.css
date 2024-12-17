@@ -2,4 +2,5 @@
 @import url(./styles/navbar.css);
 @import url(./styles/searchbar.css);
 @import url(./styles/mainContent.css);
-@import url(./styles/githubHistory.css)
+@import url(./styles/githubHistory.css);
+@import url(./styles/action.css);

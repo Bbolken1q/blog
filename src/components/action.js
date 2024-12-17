@@ -1,31 +1,13 @@
 import React from "react";
 
-
-const returnActionIcon = (action) => {
-    switch(action) {
-        case "pull_request":
-            return "";
-        case "push":
-            return "";
-        case "issues":
-            return "";
-    }
-}
-
 class Action extends React.Component {
-    constructor(props) {
-        super(props)
-
-        // this.messageId = new messageid
-        this.userid = this.props.userid
-    }
     render()
     {
-        this.state.text = this.props.text
-
         return(
             <div className="action">
-                action
+                <h1></h1>
+                <span className="repo">{this.props.repo}</span><br/>
+                <span className="message">{this.props.actiontext}</span>
             </div>
         )
     }

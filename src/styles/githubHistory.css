@@ -10,4 +10,5 @@
     border-radius: 0px 9px 9px 0px;
     border-width: 2px 2px 2px 0px;
     border-style: solid;
+    overflow: hidden;
 }
