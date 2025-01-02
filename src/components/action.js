@@ -1,10 +1,10 @@
 import React from "react";
 
 class Action extends React.Component {
-    constructor() {
-        super()
-        // this.setAttribute()
-    }
+    // constructor() {
+    //     super()
+    //     // console.log(this.Component.className)
+    // }
     render()
     {
         return(

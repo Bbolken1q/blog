@@ -5,7 +5,7 @@
     float: left;
     height: calc(100vh - 20vh);
     width: calc(70vw - 10px);
-    padding: 10px;
+    /* padding: 10px; */
     background-color: #27292f;
     color: aliceblue;
     border-color: #363941;
@@ -13,7 +13,10 @@
     border-width: 2px;
     border-style: solid;
     font-family: "JetBrains Mono";
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainContent a {
@@ -23,6 +26,8 @@
 .mainContent h2 {
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 100%;
+    padding: 10px 0px 0px 10px;
 }
 
 .mainContent h1 {
@@ -30,6 +35,7 @@
     padding-right: 0px;
     width: 20px;
     display: inline;
+    padding-left: 10px;
 }
 
 .mainContent span {
@@ -37,4 +43,9 @@
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    padding-left: 10px;
+}
+
+.mainContent p {
+    padding: 10px 0px 0px 10px;
 }

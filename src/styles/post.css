@@ -1,0 +1,24 @@
+.post {
+    background-color: #31333b;
+    border-bottom: 2px solid #363941;
+
+
+    /* width: calc(100%-20px); */
+    padding: 10px;
+    /* height: 30%; */
+
+    /* height: 100px; */
+    /* background-color: brown; */
+
+    padding-bottom: 10px;
+    /* display: flex; */
+    color: white;
+}
+
+.post .title {
+    font-size: larger;
+}
+
+.post .subtext {
+    color: rgba(255, 255, 255, 0.397);
+}
