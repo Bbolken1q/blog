@@ -8,7 +8,7 @@ class PostElement extends React.Component {
     constructor(props) {
         super(props)
         this.ref = React.createRef()
-        var str = posts_json.posts[0]
+        var str = posts_json.posts[this.props.post]
         this.title = str.split('<h2>').pop().split('</h2>')[0]
         this.textContent = str.split('</h2>').pop()
         this.textContent = this.textContent.replace(/<.*?>/g, '')
@@ -16,18 +16,18 @@ class PostElement extends React.Component {
         
     }
 
-    update = () => {
-        console.log(this.ref.current.offsetWidth)
-        this.sub = tooLong(this.textContent, null, this.ref.current.offsetWidth - 150, 13) 
-        this.setState({}) 
-    }
-
     componentDidMount() {
-        console.log("width: "+ this.ref.current.offsetWidth)
+        // console.log("width: "+ this.ref.current.offsetWidth)
         
         this.update()
 
-        window.addEventListener('resize', this.update);
+        window.addEventListener('resize', this.update)
+    }
+
+    update = () => {
+        // console.log(this.ref.current.offsetWidth)
+        this.sub = tooLong(this.textContent, 130, null, 13) 
+        this.setState({}) 
     }
 
     render() {

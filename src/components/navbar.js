@@ -5,8 +5,8 @@ function Navbar() {
     return(
         <div className="navbar">
             <ul>
-                <li><span/><span/><span/><span/><a href="/">{lang.nav.home}</a></li>
-                <li><span/><span/><span/><span/><a href="/?p=about">{lang.nav.about}</a></li>
+                <li><span/><span/><span/><span/><a onClick={window.mainContent.changePage("main")}>{lang.nav.home}</a></li>
+                <li><span/><span/><span/><span/><a onClick={window.mainContent.changePage("about")}>{lang.nav.about}</a></li>
                 <li><span/><span/><span/><span/><a href="/?p=links">{lang.nav.links}</a></li>
                 <li><span/><span/><span/><span/><a href="/?p=post">{lang.nav.posts}</a></li>
                 <li><span/><span/><span/><span/><a href="/?p=contact">{lang.nav.contact}</a></li>
