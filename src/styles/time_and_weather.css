@@ -1,0 +1,16 @@
+.clock {
+    background-color: #27292f;
+    color: aliceblue;
+    border-color: #363941;
+    border-radius: 9px;
+    border-width: 2px;
+    border-style: solid;
+    font-family: "JetBrains Mono";
+    width: 18.5vw;
+    display: block;
+    float: right;
+    position: fixed;
+    right: 5px;
+    top: calc(14vh + 10px);
+    padding: 3px;
+}

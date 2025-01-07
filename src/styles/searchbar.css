@@ -2,7 +2,7 @@
     font-family: "JetBrains Mono";
     float: right;
     position: fixed;
-    left: calc(50% + 10vh - (50vw + 5*2px)/1.33);
+    left: calc(50% + 10vh - ((10vw + 2px)*4)/1.33);
     margin-top: 3vh;
     padding: 0px 3px;
     width: 25vw;

@@ -16,29 +16,32 @@ function getPostElements() {
 class MainContent extends React.Component {
     constructor(params) {
         super(params)
-        // this.getLink()
+        this.getLink()
         window.mainContent = this
     }
 
     getLink(text = null) {
-        const linkParams = new URLSearchParams(document.location.search);
-            this.postId = linkParams.get("p");
+        const linkParams = new URLSearchParams(document.location.search)
+            this.postId = linkParams.get("p")
+
+            if(this.postId == null) {
+                this.postId = "main"
+            }
 
             if(text) {
                 this.postId = text
             }
 
             switch(this.postId) {
+                case "home": 
+                case "main": 
+                    this.postId = getPostElements()
+                    break;
                 case "about":
                 case "post":
                 case "contact":
                 case "links": 
                     this.postId = posts[this.postId]
-                    break;
-                case "home": 
-                case "main": 
-                    this.postId = getPostElements()
-                    console.log(this.postId)
                     break;
                 default: {
                     this.postId = +this.postId
@@ -54,6 +57,7 @@ class MainContent extends React.Component {
     }
 
     changePage(text = null) {
+        
 
         if(text) {
             this.getLink(text)
@@ -61,17 +65,15 @@ class MainContent extends React.Component {
 
         let mainContent = document.getElementById("mainContent");
         
-        // If postId is a single React component or an array of React components
+        ReactDOM.unmountComponentAtNode(mainContent) // unmount so you can go to the homepage again
+
         if (Array.isArray(this.postId)) {
-            // Render the array of React components
             setTimeout(() => {
                 ReactDOM.render(this.postId, mainContent);
             }, 1);
         } else if (this.postId instanceof HTMLElement) {
-            // If it's an HTML element, append it to mainContent
             mainContent.appendChild(this.postId);
         } else {
-            // If it's a normal HTML content (string), set it as innerHTML
             setTimeout(() => {
                 mainContent.innerHTML = this.postId;
             }, 1);
@@ -83,8 +85,7 @@ class MainContent extends React.Component {
     }
 
     render() {
-        return <div className='mainContent' id='mainContent'></div> // <PostElement post="1"/>
-        // return <div className='mainContent' dangerouslySetInnerHTML={{__html: this.postId}}></div>
+        return <div className='mainContent' id='mainContent'></div>
     }
 
 }

@@ -23,11 +23,20 @@
     color: aqua;
 }
 
-.mainContent h2 {
+.mainContent .back {
+    color: rgba(255, 255, 255, 0.4);
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
     padding: 10px 0px 0px 10px;
+    font-size: 13px;
+}
+
+.mainContent h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
 }
 
 .mainContent h1 {
