@@ -31,12 +31,12 @@ export default App;
 
 /*
 
-TODO: Menu zawierające min 5 pozycji (jedna pozycja = jeden artykuł) // na koniec
-TODO: Zamieszczony dowolny film 
-TODO: Dowolna galeria zdjęć (min 10 zdjęć) pod osobną pozycją w menu  
+DONE: Menu zawierające min 5 pozycji (jedna pozycja = jeden artykuł) // na koniec
+DONE: Zamieszczony dowolny film 
+DONE: Dowolna galeria zdjęć (min 10 zdjęć) pod osobną pozycją w menu  
 DONE: Zegar cyfrowy (dowolny)
 DONE: Moduł z losowo wyświetlanym zdjęciem 
-TODO: Mapy google z dowolną lokalizacją  
+DONE: Mapy google z dowolną lokalizacją  
 DONE: Wybrany przez siebie dowolny moduł rozszerzający funkcjonalność strony 
 
 */

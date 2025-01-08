@@ -3,7 +3,7 @@
     position: fixed;
     left: calc(10vw + 10px);
     float: left;
-    height: calc(100vh - 20vh);
+    height: 80vh;
     width: calc(70vw - 10px);
     /* padding: 10px; */
     background-color: #27292f;
@@ -57,4 +57,25 @@
 
 .mainContent p {
     padding: 10px 0px 0px 10px;
+}
+
+.mainContent img {
+    width: 25%;
+    float: left;
+    display: inline;
+    margin: 15px;
+    border-color: #363941;
+    border-radius: 9px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.mainContent iframe {
+    margin: 3px;
+    border-color: #363941;
+    border-radius: 9px;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(100% - 18px);
+    height: 70vh;
 }

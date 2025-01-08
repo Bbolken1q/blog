@@ -6,7 +6,9 @@
     "posts": [
         "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Title1</h2> <span>asdfghjkl</span>",
         "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Przykładowy post 2</h2> <span>Lorem ipsum...</span>",
-        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Zdjęcia</h2> <img src=require('../assets/images/baby.jpg')></img>"
+        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Zdjęcia</h2> <span><img src='./static/media/dallas.2176a01e3c4f2d6e7c5a.png'></img><img src='./static/media/programming.0d2584fee1e1b1618f4b.jpg'></img><img src='./static/media/overflow.0a1b294fbf6ee041a891.webp'></img><img src='./static/media/baby.e63f7ea754126c74e093.jpg'></img><img src='./static/media/man.155d006c8c33eb7abe85.jpg'></img><img src='./static/media/korea.952d749d8ba2bc37af1b.png'></img><img src='./static/media/bomb.29fdb5adcf05cad1af91.jpg'></img><img src='./static/media/burger.966bd370ff148f11df67.jpg'></img><img src='./static/media/computer.ddaab92c7eaea06ac463.jpg'></img><img src='./static/media/spider.1f90f4157ec171f07f75.webp'></img></span>",
+        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Film</h2> <span><iframe src='https://www.youtube.com/embed/UN7SBXJj2pc?controls=0&autoplay=1'></iframe></span>",
+        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Mapa</h2> <span><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11220.734988497037!2d13.549955375291042!3d45.324911873791194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477c9c742d9f5255%3A0xf077ad3ab39aed47!2sNovigrad%2C%20Chorwacja!5e0!3m2!1spl!2spl!4v1736322176602!5m2!1spl!2spl' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe></span>"
     ]
-
 }
+
