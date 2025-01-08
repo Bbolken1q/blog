@@ -5,7 +5,8 @@
     "contact":"<h2>Contact:</h2> <span>E-mail: bolek.bondyra@protonmail.com <br> Discord: bbolken</span>",
     "posts": [
         "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Title1</h2> <span>asdfghjkl</span>",
-        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Przykładowy post 2</h2> <span>Lorem ipsum...</span>"
+        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Przykładowy post 2</h2> <span>Lorem ipsum...</span>",
+        "<a class='back' href='#' onClick={window.mainContent.changePage('home')}>  back</a> <h2>Zdjęcia</h2> <img src=require('../assets/images/baby.jpg')></img>"
     ]
 
 }

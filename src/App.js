@@ -7,6 +7,7 @@ import MainContent from './components/mainContent';
 import { ActionContainer } from './components/githubHistoryContainer';
 import { searchbar as Mssearchbar } from './components/searchbar';
 import Clock from './components/clock';
+import RandomPhoto from './components/randomPhoto';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <ActionContainer />
     <MainContent/>
      <Clock />
+     <RandomPhoto />
     </div>
   );
 }
@@ -33,7 +35,7 @@ TODO: Menu zawierające min 5 pozycji (jedna pozycja = jeden artykuł) // na kon
 TODO: Zamieszczony dowolny film 
 TODO: Dowolna galeria zdjęć (min 10 zdjęć) pod osobną pozycją w menu  
 DONE: Zegar cyfrowy (dowolny)
-TODO: Moduł z losowo wyświetlanym zdjęciem 
+DONE: Moduł z losowo wyświetlanym zdjęciem 
 TODO: Mapy google z dowolną lokalizacją  
 DONE: Wybrany przez siebie dowolny moduł rozszerzający funkcjonalność strony 
 
